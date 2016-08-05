@@ -537,6 +537,10 @@ static const struct tegra_sata_soc_data tegra124_sata_data = {
 };
 
 static const struct of_device_id of_ahci_tegra_match[] = {
+        {
+                .compatible = "nvidia,tegra114-ahci-sata",
+                .data = &tegra114_sata_data,
+        },
 	{
 		.compatible = "nvidia,tegra124-ahci-sata",
 		.data = &tegra124_sata_data,
